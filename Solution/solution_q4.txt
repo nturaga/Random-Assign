@@ -1,0 +1,4 @@
+1)
+awk 'NR==3' gene_expr_500x204.gct |tr '\t' '\n' |tail -n +3 >samples.grp 
+2)
+awk '{printf("%1c%02d\n",substr($1,1,1),substr($1,2,2))}' samples.grp|sort > sorted_sample.grp

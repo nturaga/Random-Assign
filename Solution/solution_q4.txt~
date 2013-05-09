@@ -1,0 +1,4 @@
+1)
+
+2)
+awk '{printf("%1c%02d\n",substr($1,1,1),substr($1,2,2))}' samples.grp|sort > sorted_sample.grp
